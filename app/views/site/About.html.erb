@@ -1,0 +1,90 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+      <%= link_to('Home', controller: 'site', action: 'Home', class: 'navbar-brand') do %>
+        <%= image_tag('todo72.png', alt: 'Logo', class: 'd-inline-block') %>
+        TO-DO Task Manager
+      <% end %>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <%= link_to('Home', controller: 'site', action: 'Home', class: 'nav-link') do %>
+              Home
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to('About', controller: 'site', action: 'About', class: 'nav-link active') do %>
+              About
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to('Download', controller: 'site', action: 'Download', class: 'nav-link') do %>
+              Download
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/lemichello/TO-DO-Task-Manager" target="_blank"
+               class="nav-link">Github</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<div id="main-content" class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">How to use</h1>
+    <p class="lead">TO-DO Task Manager, which will help you to manage your tasks.</p>
+    <hr class="my-4">
+    <section>
+      <h3>Telegram-bot</h3>
+      <p>Telegram Bot - @todotaskmanagerbot, which is written on Go.
+        It can do everything, that you can do on desktop version (except registration).</p>
+    </section>
+    <hr>
+    <section>
+      <h3>Characteristics of Inbox page:</h3>
+      <p>Tasks will appear in the Inbox page when they haven't their date (their date is not specified). When
+        you'll
+        specify a date of a task in the Inbox page, it will be removed from the Inbox page and added to the
+        Today
+        page or Upcoming page. The inbox page is useful for tasks, dates of which you didn't come up with.</p>
+    </section>
+    <hr>
+    <section>
+      <h3>Characteristics of Today page:</h3>
+      <p>Tasks will appear on the Today page when their date values are equal to today's or previous dates.</p>
+    </section>
+    <hr>
+    <section>
+      <h3>Characteristics of Upcoming page:</h3>
+      <p>Tasks will appear in the Upcoming page when their date values are bigger than today's. In the Upcoming
+        page is a possibility to view tasks for the next 7 days and the next 5 months.</p>
+    </section>
+    <hr>
+    <section>
+      <h3>Characteristics of Logbook page:</h3>
+      <p>Tasks will appear in Logbook page when User will check them in any remaining pages mentioned above. Users
+        can bring back tasks from this page to another, according to its date value by unchecking it.</p>
+    </section>
+    <hr>
+    <section>
+      <h3>Characteristics of Shared Project page:</h3>
+      <p>You can create shared projects. In shared projects you and your team can add and complete tasks. To
+        invite members you need to know their logins and after accepting the invitation they will join to your
+        project. Also, you can create project, but not invite any users to it.</p>
+    </section>
+    <hr>
+    <section>
+      <h4>Another</h4>
+      <p>You can add tags to tasks. By tags you can search your tasks in search bar.</p>
+    </section>
+    <hr>
+    <a class="btn btn-primary" href="https://github.com/lemichello/TO-DO-Task-Manager" target="_blank">See on
+      Github</a>
+  </div>
+</div>

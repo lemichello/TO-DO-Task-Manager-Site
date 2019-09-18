@@ -1,0 +1,80 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+      <%= link_to('Home', controller: 'site', action: 'Home', class: 'navbar-brand') do %>
+        <%= image_tag('todo72.png', alt: 'Logo', class: 'd-inline-block') %>
+        TO-DO Task Manager
+      <% end %>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <%= link_to('Home', controller: 'site', action: 'Home', class: 'nav-link active') do %>
+              Home
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to('About', controller: 'site', action: 'About', class: 'nav-link') do %>
+              About
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to('Download', controller: 'site', action: 'Download', class: 'nav-link') do %>
+              Download
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/lemichello/TO-DO-Task-Manager" target="_blank"
+               class="nav-link">Github</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<div id="main-content" class="container">
+  <div class="carousel slide shadow mb-6 rounded" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <%= image_tag('project-page.png', alt: 'First slide', class: 'd-block w-100') %>
+      </div>
+      <div class="carousel-item">
+        <%= image_tag('upcoming-page.png', alt: 'Second slide', class: 'd-block w-100') %>
+      </div>
+      <div class="carousel-item">
+        <%= image_tag('task-edit-window.png', alt: 'Third slide', class: 'd-block w-100') %>
+      </div>
+    </div>
+  </div>
+  <div id="download-cards" class="row">
+    <div class="col-sm-6">
+      <div class="download-card card">
+        <%= image_tag('Windows_10_logo.png', alt: 'Windows', class: 'card-img-top d-none d-lg-block') %>
+        <div class="card-body">
+          <h4 class="card-title">For Windows</h4>
+          <p class="card-text">
+            You need to unpack downloaded .zip file and launch 'setup' file to install application.
+          </p>
+          <%= link_to('Download', controller: 'site', action: 'Download', class: 'btn btn-primary') do %>
+            Download
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="download-card card">
+        <%= image_tag('telegram-logo.png', alt: 'Telegram-bot', class: 'card-img-top d-none d-lg-block') %>
+        <div class="card-body">
+          <h4 class="card-title">Telegram-bot</h4>
+          <p class="card-text">
+            To use a bot you need to register an account in the application using 'TO-DO Task Manager'.
+          </p>
+          <a href="https://t.me/todotaskmanagerbot" target="_blank" class="btn btn-primary">Start using</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
