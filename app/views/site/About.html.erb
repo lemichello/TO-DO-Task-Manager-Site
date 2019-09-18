@@ -1,8 +1,8 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container">
-      <%= link_to('Home', controller: 'site', action: 'Home', class: 'navbar-brand') do %>
-        <%= image_tag('todo72.png', alt: 'Logo', class: 'd-inline-block') %>
+      <%= link_to('Home', class: 'navbar-brand', id: 'brand-text') do %>
+        <%= image_tag('todo72.png', alt: 'Logo', class: 'logo-img d-inline-block') %>
         TO-DO Task Manager
       <% end %>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -12,17 +12,17 @@
       <div id="navbarNav" class="collapse navbar-collapse">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <%= link_to('Home', controller: 'site', action: 'Home', class: 'nav-link') do %>
+            <%= link_to('Home', class: 'nav-link') do %>
               Home
             <% end %>
           </li>
           <li class="nav-item">
-            <%= link_to('About', controller: 'site', action: 'About', class: 'nav-link active') do %>
+            <%= link_to('About', class: 'nav-link active') do %>
               About
             <% end %>
           </li>
           <li class="nav-item">
-            <%= link_to('Download', controller: 'site', action: 'Download', class: 'nav-link') do %>
+            <%= link_to('Download', class: 'nav-link') do %>
               Download
             <% end %>
           </li>

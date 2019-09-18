@@ -1,3 +1,46 @@
 // Place all the styles related to the Site controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  font-family: "Segoe UI", sans-serif;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#main-content {
+  margin-top: 30px;
+}
+
+#download-cards {
+  margin-top: 50px;
+}
+
+.download-card {
+  margin: 0 0 30px 0;
+}
+
+.card-img-top {
+  height: 370px;
+}
+
+@media (max-width: 375px) {
+  #brand-text {
+    font-size: 1.0em;
+  }
+
+  .logo-img {
+    content: url("todo48.png");
+  }
+
+  #logo-image {
+    width: 48px;
+    height: 48px;
+  }
+}
