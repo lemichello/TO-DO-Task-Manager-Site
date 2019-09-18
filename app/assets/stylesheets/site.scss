@@ -36,7 +36,9 @@ body {
   }
 
   .logo-img {
-    content: asset_url("todo48.png");
+    background: url("/todo48.png");
+    width: 48px;
+    height: 48px;
   }
 
   #logo-image {
