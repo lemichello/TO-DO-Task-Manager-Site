@@ -18,6 +18,15 @@ body {
   margin-top: 30px;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+  filter: invert(100%);
+}
+
+.carousel .carousel-indicators li {
+  filter: invert(100%);
+}
+
 #download-cards {
   margin-top: 50px;
 }
