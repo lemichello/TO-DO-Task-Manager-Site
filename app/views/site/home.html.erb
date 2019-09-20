@@ -1,40 +1,3 @@
-<header>
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <div class="container">
-      <%= link_to('Home', class: 'navbar-brand', id: 'brand-text') do %>
-        <%= image_tag('todo72.png', alt: 'Logo', class: 'logo-img d-inline-block') %>
-        TO-DO Task Manager
-      <% end %>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div id="navbarNav" class="collapse navbar-collapse">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <%= link_to('Home', class: 'nav-link active') do %>
-              Home
-            <% end %>
-          </li>
-          <li class="nav-item">
-            <%= link_to('About', class: 'nav-link') do %>
-              About
-            <% end %>
-          </li>
-          <li class="nav-item">
-            <%= link_to('Download', class: 'nav-link') do %>
-              Download
-            <% end %>
-          </li>
-          <li class="nav-item">
-            <a href="https://github.com/lemichello/TO-DO-Task-Manager" target="_blank"
-               class="nav-link">Github</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
 <div id="main-content" class="container">
   <div id="carousel-pictures" class="carousel slide shadow mb-6 rounded" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -71,7 +34,7 @@
           <p class="card-text">
             You need to unpack downloaded .zip file and launch 'setup' file to install application.
           </p>
-          <%= link_to('Download', class: 'btn btn-primary') do %>
+          <%= link_to('download', class: 'btn btn-primary') do %>
             Download
           <% end %>
         </div>

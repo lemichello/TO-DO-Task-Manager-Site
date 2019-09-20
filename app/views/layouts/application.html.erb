@@ -15,6 +15,43 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
+<header>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+      <%= link_to('home', class: 'navbar-brand', id: 'brand-text') do %>
+        <%= image_tag('todo72.png', alt: 'Logo', class: 'logo-img d-inline-block') %>
+        TO-DO Task Manager
+      <% end %>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <%= link_to('home', class: "nav-link#{' active' if @is_home_link_active}") do %>
+              Home
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to('about', class: "nav-link#{' active' if @is_about_link_active}") do %>
+              About
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to('download', class: 'nav-link') do %>
+              Download
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/lemichello/TO-DO-Task-Manager" target="_blank"
+               class="nav-link">Github</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 <%= yield %>
 </body>
 </html>
