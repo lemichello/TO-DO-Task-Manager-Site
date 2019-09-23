@@ -7,8 +7,8 @@
   <%= csp_meta_tag %>
   <%= favicon_link_tag '/todoIcon.ico' %>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= stylesheet_link_tag 'site' %>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <%= stylesheet_link_tag 'site' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -53,5 +53,40 @@
   </nav>
 </header>
 <%= yield %>
+<footer class="panel-footer">
+  <div class="container">
+    <div class="row">
+      <section id="links" class="col-sm-4">
+        <span>Links:</span><br>
+        <a href="https://github.com/lemichello/TO-DO-Task-Manager" target="_blank" class="footer-link">
+          Application Github
+        </a>
+        <br>
+        <a href="https://github.com/lemichello/TO-DO-Task-Manager-Site" target="_blank" class="footer-link">
+          Website Github
+        </a>
+        <hr class="d-sm-none">
+      </section>
+      <section id="contacts" class="col-sm-4">
+        <span>Contacts:</span><br>
+        Maksym Lemich
+        <br>
+        <a href="mailto:lemichello.m@gmail.com" class="footer-link">Email</a>
+        <br>
+        <a href="https://www.linkedin.com/in/lemichmaksym/" target="_blank" class="footer-link">
+          LinkedIn
+        </a>
+        <hr class="d-sm-none">
+      </section>
+      <section id="technologies" class="col-sm-4">
+        <span>Used technologies:</span><br>
+        TO-DO Task Manager for Windows: <p>C#, WPF, Entity Framework, SQL Server, Material Design</p>
+        Telegram-bot: <p>Go</p>
+        Website: <p>Ruby, Ruby on Rails, Bootstrap 4</p>
+      </section>
+    </div>
+    <div class="text-center copyright-text">&copy; Copyright TO-DO Task Manager 2019</div>
+  </div>
+</footer>
 </body>
 </html>

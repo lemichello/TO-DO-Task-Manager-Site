@@ -39,6 +39,60 @@ body {
   height: 370px;
 }
 
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #343A40;
+  border-top: 0;
+  color: white;
+}
+
+.panel-footer section {
+  font-size: 1.1em;
+}
+
+#links, #contacts, #technologies {
+  line-height: 2;
+}
+
+#links > span, #contacts > span, #technologies > span {
+  font-size: 1.4em;
+}
+
+.footer-link {
+  color: #dadfe5;
+}
+
+.footer-link:hover, .footer-link:active {
+  text-decoration: none;
+  color: #adb5bc;
+}
+
+.panel-footer section hr {
+  width: 50%;
+  background-color: white;
+}
+
+#technologies p {
+  color: gray;
+}
+
+.copyright-text {
+  padding-top: 25px;
+}
+
+@media (max-width: 767px) {
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .copyright-text {
+    padding-top: 0;
+  }
+}
+
 @media (max-width: 375px) {
   #brand-text {
     font-size: 1.0em;
